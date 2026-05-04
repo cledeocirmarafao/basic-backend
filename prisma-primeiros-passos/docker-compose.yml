@@ -1,0 +1,10 @@
+services:
+  ecommerce-db:
+    image: postgres:15
+    container_name: prisma
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: prisma
+    ports:
+      - "5432:5432"
